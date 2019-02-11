@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/wheater_navigation"
+            app:startDestination="@id/weatherListFragment">
+
+    <fragment android:id="@+id/weatherListFragment" android:name="com.david.myweather.weatherList.WeatherListFragment"
+              android:label="fragment_weather_list" tools:layout="@layout/fragment_weather_list">
+        <action android:id="@+id/action_weatherListFragment_to_addLocationFragment"
+                app:destination="@id/addLocationFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/addLocationFragment" android:name="com.david.myweather.addCity.AddCityFragment"
+              android:label="fragment_add_location" tools:layout="@layout/fragment_add_location"/>
+</navigation>

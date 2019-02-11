@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Weather</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_city_menu">Add City</string>
+    <string name="city_name">City name</string>
+    <string name="add_city">Add City</string>
+</resources>

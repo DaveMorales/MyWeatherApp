@@ -39,12 +39,6 @@ class AppModule(val app: Application) {
 
     @Provides
     @Singleton
-    fun provideWeatherRepository(
-        weatherRepository: WeatherRepository
-    ): WeatherRepository = weatherRepository
-
-    @Provides
-    @Singleton
     fun providWeatherListViewModelFactory(
         factory: WeatherListViewModelFactory
     ): ViewModelProvider.Factory = factory

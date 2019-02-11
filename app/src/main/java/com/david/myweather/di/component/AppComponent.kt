@@ -4,8 +4,6 @@ import com.david.myweather.di.modules.NetworkModule
 import com.david.myweather.MyWeatherApplication
 import com.david.myweather.di.modules.AppModule
 import com.david.myweather.di.modules.BuildersModule
-import com.david.myweather.utils.UpdateWorker
-import com.david.myweather.weatherList.WeatherListFragment
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 import javax.inject.Singleton
@@ -19,6 +17,4 @@ import javax.inject.Singleton
 )
 interface AppComponent {
     fun inject(app: MyWeatherApplication)
-
-    fun inject(worker: UpdateWorker)
 }

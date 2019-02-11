@@ -17,9 +17,6 @@ interface WeatherDao {
   @Query("SELECT * FROM weatherData")
   fun getWeatherData(): Single<List<ResponseDto>>
 
-  @Query("SELECT id FROM weatherData")
-  fun getIds(): Single<List<ResponseDto>>
-
   @Query("UPDATE weatherData SET weather = :newWeather WHERE id=:id")
   fun updateWeather(newWeather: List<WeatherDto?>, id:Int)
 
